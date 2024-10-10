@@ -1,12 +1,12 @@
 // script.js
-const rosquinha = document.getElementById('rosca');
+const bola = document.getElementById('bola');
 let velocidadeY = 0; // Velocidade vertical
 const gravidade = 0.5; // Aceleração da gravidade
 const limiteInferior = 450; // Limite inferior da área de jogo
 
 function atualizar() {
     velocidadeY += gravidade; // Aplica gravidade
-    let novaPosicaoY = parseInt(rosca.style.top) + velocidadeY;
+    let novaPosicaoY = parseInt(bola.style.top) + velocidadeY;
 
     // Verifica se atingiu o limite inferior
     if (novaPosicaoY >= limiteInferior) {
@@ -14,7 +14,7 @@ function atualizar() {
         velocidadeY *= -0.7; // Inverte a direção e aplica um fator de amortecimento
     }
 
-    rosca.style.top = novaPosicaoY + 'px';
+    bola.style.top = novaPosicaoY + 'px';
 
     requestAnimationFrame(atualizar); // Chama a função novamente
 }
