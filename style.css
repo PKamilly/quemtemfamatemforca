@@ -1,3 +1,4 @@
 #area {
     position: relative;
+    overflow: hidden; /* Impede que a imagem saia da área */
 }
