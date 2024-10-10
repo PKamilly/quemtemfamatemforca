@@ -3,7 +3,7 @@ body {
     margin: 0; /* Remove margens padrão */
 }
 
-#area-jogo {
+#area {
     position: relative;
     width: 100%;
     height: 500px;
