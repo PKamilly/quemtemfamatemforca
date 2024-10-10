@@ -11,5 +11,4 @@ body {
     background-size: cover; /* Ajusta a imagem para cobrir toda a área */
     background-position: center; /* Centraliza a imagem */
     border: 1px solid #000;
-    overflow: hidden;
 }
