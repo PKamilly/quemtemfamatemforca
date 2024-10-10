@@ -1,8 +1,15 @@
 /* estilo.css */
+body {
+    margin: 0; /* Remove margens padrão */
+}
+
 #area-jogo {
     position: relative;
     width: 100%;
     height: 500px;
+    background-image: url('IMAGEM/fundo_montanha.jpg'); /* Caminho da imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
     border: 1px solid #000;
-    overflow: hidden; /* Impede que a imagem saia da área */
+    overflow: hidden;
 }
