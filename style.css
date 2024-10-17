@@ -12,3 +12,11 @@ body {
     background-position: center; /* Centraliza a imagem */
     border: 1px solid #000;
 }
+
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid blue; /* Cor do triângulo */
+}
