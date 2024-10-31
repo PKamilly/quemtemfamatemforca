@@ -1,6 +1,6 @@
 const moon = document.getElementById('moon');
 const moonPeriod = 2; // Período da lua em segundos
-const moonSpeed = 10; // Velocidade da lua em m/s
+const moonSpeed = 2; // Velocidade da lua em m/s
 const moonRadius = 200; // Raio da órbita em pixels
 
 // Atualiza os valores na tela
