@@ -1,50 +1,36 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     background-color: black;
-    margin: 0;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 .container {
     position: relative;
+    width: 400px;
+    height: 400px;
 }
 
 .planet {
-    width: 100px;
-    height: 100px;
-    background-color: blue; /* Cor do planeta */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: blue;
     border-radius: 50%;
-    position: relative;
-    animation: rotate 10s linear infinite;
+    transform: translate(-50%, -50%);
 }
 
 .moon {
-    width: 30px;
-    height: 30px;
-    background-color: gray; /* Cor da lua */
-    border-radius: 50%;
     position: absolute;
-    top: -15px; /* Para centralizar a lua */
-    left: 100px; /* Distância do planeta */
-    animation: orbit 3s linear infinite;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes orbit {
-    from {
-        transform: rotate(0deg) translateX(50px) rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg) translateX(50px) rotate(-360deg);
-    }
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    transform-origin: -60px;
 }
