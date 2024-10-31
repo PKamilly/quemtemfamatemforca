@@ -27,6 +27,8 @@ body {
 }
 
 .moon {
+    width: 20px;
+    height: 20px;
     position: absolute;
     transform-origin: -60px;
 }
