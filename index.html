@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planeta com Lua</title>
+    <title>Lua Orbitando um Planeta</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="planet">PLANETA</div>
-        <div class="moon">LUA</div>
+        <div class="planet" id="planet"></div>
+        <div class="moon" id="moon"></div>
+    </div>
+    <div class="info">
+        <p>Período da Lua: <span id="moon-period"></span> s</p>
+        <p>Velocidade da Lua: <span id="moon-speed"></span> m/s</p>
+        <p>Raio da Lua: <span id="moon-radius"></span> m</p>
     </div>
     <script src="script.js"></script>
 </body>
