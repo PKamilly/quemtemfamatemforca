@@ -7,6 +7,10 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
+    background-image: url('https://starwalk.space/gallery/images/what-is-space/1920x1080.jpg');
+    background-size: cover; /* Para cobrir toda a área */
+    background-position: center; /* Para centralizar a imagem */
+    background-repeat: no-repeat; /* Para evitar que a imagem se repita */
 }
 
 .container {
