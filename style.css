@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #000;
+    background-image: url(.IMAGEM/espaco.jpg);
     overflow: hidden;
     margin: 0;
 }
@@ -20,7 +20,7 @@ body {
 .planeta {
     width: 150px;
     height: 150px;
-    background-image: url('imagens/planeta.jpg'); /* Imagem do planeta */
+    background-image: url('.IMAGEM/rosquinha.png'); /* Imagem do planeta */
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -44,7 +44,7 @@ body {
 .lua {
     width: 40px;
     height: 40px;
-    background-image: url('imagens/lua.jpg'); /* Imagem da lua */
+    background-image: url('./IMAGEM/homerlua.png'); /* Imagem da lua */
     background-size: cover;
     background-position: center;
     border-radius: 50%;
