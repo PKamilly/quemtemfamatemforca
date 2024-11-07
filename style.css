@@ -1,35 +1,20 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    background-image: url('./IMAGEM/espaco.jpg');
-    background-size: cover; /* Para cobrir toda a área */
-    background-position: center; /* Para centralizar a imagem */
-    background-repeat: no-repeat; /* Para evitar que a imagem se repita */
-}
-
 .container {
     position: relative;
-    width: 1000px;
-    height: 1000px;
+    width: 200px;
+    height: 200px;
 }
 
-.planet {
+.homer {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 50px;
+    transform-origin: 150px 50%; /* Defina a origem para rotacionar ao redor da rosquinha */
+    top: 75px;
+    left: 75px;
 }
 
-.moon {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+.donut {
     position: absolute;
-    transform-origin: -60px;
+    width: 100px;
+    top: 50px;
+    left: 50px;
 }
