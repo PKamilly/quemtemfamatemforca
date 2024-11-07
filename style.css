@@ -31,7 +31,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Centraliza o planeta */
 }
 
 .lua {
@@ -40,18 +40,18 @@ body {
     background-color: #ecf0f1;
     border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: -70px;
-    animation: orbitar 5s linear infinite;
+    top: 50%; /* Posição inicial ao centro verticalmente */
+    left: 50%; /* Posição inicial ao centro horizontalmente */
+    transform-origin: 0 -70px; /* Define o ponto de rotação no centro do planeta */
+    animation: orbitar linear infinite;
 }
 
 @keyframes orbitar {
     from {
-        transform: rotate(0deg) translateX(70px) rotate(0deg);
+        transform: rotate(0deg) translateX(70px) rotate(0deg); /* A Lua começa em 0 graus */
     }
     to {
-        transform: rotate(360deg) translateX(70px) rotate(-360deg);
+        transform: rotate(360deg) translateX(70px) rotate(-360deg); /* A Lua faz uma volta completa */
     }
 }
 
