@@ -2,7 +2,7 @@
 const G = 6.67430e-11; // Constante gravitacional (m^3 kg^-1 s^-2)
 const mPlaneta = 1.5e24; // Massa do planeta (kg) - Escalada
 const mLua = 2.5e22; // Massa da Lua (kg) - Escalada
-const distanciaReal = 384400000; // Distância real entre o planeta e a Lua (m)
+const distanciaReal = 20px; // Distância real entre o planeta e a Lua (m)
 
 // **Escalar a distância para um valor visualmente adequado**
 const escalaDistancia = 500; // Distância visual (em px)
