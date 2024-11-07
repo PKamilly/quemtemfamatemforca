@@ -4,17 +4,18 @@
     height: 200px;
 }
 
-.homer {
-    position: absolute;
-    width: 50px;
-    transform-origin: 150px 50%; /* Defina a origem para rotacionar ao redor da rosquinha */
-    top: 75px;
-    left: 75px;
-}
-
 .donut {
     position: absolute;
     width: 100px;
+    height: 100px;
     top: 50px;
     left: 50px;
+}
+
+.homer {
+    position: absolute;
+    width: 50px;
+    transform-origin: 100px 50%; /* Origem de rotação ajustada para orbitar em torno do donut */
+    top: 75px; /* Posição inicial acima do donut */
+    left: 75px;
 }
