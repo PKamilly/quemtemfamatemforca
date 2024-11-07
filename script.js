@@ -1,24 +1,21 @@
-const moon = document.getElementById('moon');
-const moonPeriod = 10; // Período da lua em segundos
-const moonSpeed = 2; // Velocidade da lua em m/s
-const moonRadius = 300; // Raio da órbita em pixels
-
-// Atualiza os valores na tela
-document.getElementById('moon-period').textContent = moonPeriod;
-document.getElementById('moon-speed').textContent = moonSpeed;
-document.getElementById('moon-radius').textContent = moonRadius;
-
 let angle = 0;
 
-// Função de animação
 function animate() {
-    angle += (360 / (moonPeriod * 100)); // 360 graus dividido pelo número de frames
-    const radians = angle * (Math.PI / 180);
-    const x = moonRadius * Math.cos(radians);
-    const y = moonRadius * Math.sin(radians);
-    moon.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+    angle += 0.05; // Ajuste a velocidade da rotação
+    const homer = document.getElementById("homer");
+    
+    // Calcule a nova posição de Homer para simular a órbita
+    const x = 50 * Math.cos(angle) + 75; // Ajuste o valor para centralizar na rosquinha
+    const y = 50 * Math.sin(angle) + 75;
+    
+    homer.style.left = `${x}px`;
+    homer.style.top = `${y}px`;
+    
+    // Faça o Homer "olhar" para o centro da rosquinha
+    const rotationAngle = angle * (180 / Math.PI); // Converte para graus
+    homer.style.transform = `rotate(${rotationAngle + 90}deg)`;
+    
     requestAnimationFrame(animate);
 }
 
-// Inicia a animação
 animate();
