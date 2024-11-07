@@ -2,9 +2,13 @@
 const G = 6.67430e-11; // Constante gravitacional (m^3 kg^-1 s^-2)
 const mPlaneta = 5.972e24; // Massa do planeta (kg)
 const mLua = 7.34767309e22; // Massa da Lua (kg)
-const distancia = 384400000; // Distância média entre o planeta e a Lua (m)
+const distanciaReal = 384400000; // Distância real entre o planeta e a Lua (m)
 
-// Função para calcular a velocidade orbital
+// **Escalar a distância para um valor visualmente adequado**
+const escalaDistancia = 500; // Distância visual (em px)
+const distancia = distanciaReal / 1000000; // Reduzir a distância para um valor mais razoável na animação
+
+// Função para calcular a velocidade orbital (em m/s)
 function calcularVelocidadeOrbital(r) {
     return Math.sqrt(G * mPlaneta / r);
 }
@@ -24,7 +28,7 @@ const velocidade = calcularVelocidadeOrbital(distancia); // em m/s
 const aceleracao = calcularAceleracao(velocidade, distancia); // em m/s²
 const forca = calcularForcaGravitacional(mPlaneta, mLua, distancia); // em Newtons
 
-// Atualizar os valores na tela
+// Atualizar os valores na tela (para fins informativos)
 document.getElementById('velocidade').textContent = velocidade.toFixed(2);
 document.getElementById('aceleracao').textContent = aceleracao.toFixed(2);
 document.getElementById('forca').textContent = forca.toExponential(2);
@@ -35,5 +39,8 @@ const lua = document.querySelector('.lua');
 // Calcular a duração da animação (tempo para a Lua completar uma órbita)
 const duracaoOrbita = (2 * Math.PI * distancia) / velocidade / 1000; // Convertendo para segundos
 
+// **Escalar a duração da animação para um tempo mais razoável**
+const duracaoEscalada = duracaoOrbita / 1000; // Reduzimos a duração para uma animação mais rápida
+
 // Ajustar a duração da animação da Lua com base na velocidade orbital
-lua.style.animationDuration = `${duracaoOrbita.toFixed(2)}s`; // Aplica o tempo calculado à animação
+lua.style.animationDuration = `${duracaoEscalada.toFixed(2)}s`; // Aplica o tempo calculado à animação
