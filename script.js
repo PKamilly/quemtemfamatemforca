@@ -1,7 +1,7 @@
-// Constantes de física
+// Constantes de física (valores escalados)
 const G = 6.67430e-11; // Constante gravitacional (m^3 kg^-1 s^-2)
-const mPlaneta = 5.972e24; // Massa do planeta (kg)
-const mLua = 7.34767309e22; // Massa da Lua (kg)
+const mPlaneta = 1.5e24; // Massa do planeta (kg) - Escalada
+const mLua = 2.5e22; // Massa da Lua (kg) - Escalada
 const distanciaReal = 384400000; // Distância real entre o planeta e a Lua (m)
 
 // **Escalar a distância para um valor visualmente adequado**
