@@ -16,11 +16,13 @@ body {
     margin: 0;
 }
 
-/* O planeta */
+/* O planeta (com imagem de fundo) */
 .planeta {
     width: 150px;
     height: 150px;
-    background-color: #1f7f5f; /* Cor do planeta */
+    background-image: url('imagens/planeta.jpg'); /* Imagem do planeta */
+    background-size: cover;
+    background-position: center;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
     position: absolute;
@@ -38,11 +40,13 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* A lua */
+/* A lua (com imagem de fundo) */
 .lua {
     width: 40px;
     height: 40px;
-    background-color: #f1f1f1;
+    background-image: url('imagens/lua.jpg'); /* Imagem da lua */
+    background-size: cover;
+    background-position: center;
     border-radius: 50%;
     position: absolute;
     top: 0;
