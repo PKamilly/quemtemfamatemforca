@@ -15,7 +15,4 @@
 .homer {
     position: absolute;
     width: 50px;
-    transform-origin: 100px 50%; /* Origem de rotação ajustada para orbitar em torno do donut */
-    top: 75px; /* Posição inicial acima do donut */
-    left: 75px;
 }
