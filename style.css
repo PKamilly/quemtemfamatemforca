@@ -11,16 +11,12 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    color: white;
-    font-family: Arial, sans-serif;
-    flex-direction: column;
 }
 
 .sistema {
     position: relative;
     width: 500px;
     height: 500px;
-    margin-bottom: 20px;
 }
 
 .planeta {
@@ -53,8 +49,4 @@ body {
     to {
         transform: rotate(360deg) translateX(70px) rotate(-360deg);
     }
-}
-
-.informacoes {
-    text-align: center;
 }
