@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lua Orbitando o Planeta</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Linkando o arquivo CSS -->
+    <title>Lua Orbitando o Planeta - Cálculos Físicos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Elementos do Planeta e Lua -->
-    <div class="orbita">
-        <div class="planeta"></div>
-        <div class="lua"></div>
+    <div class="sistema">
+        <div class="planeta">
+            <div class="lua"></div>
+        </div>
     </div>
-    <p>aehgfjdskajfs</p>
 
-    <script src="script.js"></script> <!-- Linkando o arquivo JavaScript -->
+    <div class="informacoes">
+        <p>Velocidade Orbital (m/s): <span id="velocidade"></span></p>
+        <p>Aceleração (m/s²): <span id="aceleracao"></span></p>
+        <p>Força Gravitacional (N): <span id="forca"></span></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
