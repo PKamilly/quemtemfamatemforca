@@ -2,20 +2,21 @@ let angle = 0;
 
 function animate() {
     angle += 0.02; // Ajuste a velocidade da órbita
-    const homer = document.getElementById("homer");
+    const moon = document.getElementById("moon");
 
-    // Raio da órbita
-    const orbitRadius = 80; // Distância do centro da rosquinha
+    // Raio da órbita da lua ao redor do planeta
+    const orbitRadius = 120;
 
-    // Calcule as posições x e y de Homer para criar a órbita circular
-    const centerX = 100; // Centro X da rosquinha
-    const centerY = 100; // Centro Y da rosquinha
+    // Centro do planeta
+    const centerX = 150; // Centralizado dentro do container
+    const centerY = 150;
 
-    const x = centerX + orbitRadius * Math.cos(angle) - 25; // 25 é para centralizar o Homer
-    const y = centerY + orbitRadius * Math.sin(angle) - 25; // 25 é para centralizar o Homer
+    // Calcula a posição da lua em uma órbita circular ao redor do planeta
+    const x = centerX + orbitRadius * Math.cos(angle) - 15; // 15 para centralizar a lua
+    const y = centerY + orbitRadius * Math.sin(angle) - 15; // 15 para centralizar a lua
 
-    homer.style.left = `${x}px`;
-    homer.style.top = `${y}px`;
+    moon.style.left = `${x}px`;
+    moon.style.top = `${y}px`;
 
     requestAnimationFrame(animate);
 }
