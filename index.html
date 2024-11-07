@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planeta rosquinha e Lua Homer</title>
-    <link href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Elementos do Planeta e Lua -->
+    <div class="orbita">
+        <div class="planeta"></div>
+        <div class="lua"></div>
+    </div>
     <center>
-        <div class="container">
-            <img src="./IMAGEM/rosquinha.png" class="planet" alt="Planeta">
-            <img src="./IMAGEM/homerlua.png" class="moon" id="moon" alt="Lua">
-        </div>
-    
         <div class="info">
             <p>Período da Lua: <span id="moon-period"></span> s</p>
             <p>Velocidade da Lua: <span id="moon-speed"></span> m/s</p>
             <p>Raio da Lua: <span id="moon-radius"></span> m</p>
         </div>
-        <script src="script.js"></script>
     </center>
+    <script src="script.js"></script>
 </body>
 </html>
