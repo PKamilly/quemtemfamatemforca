@@ -39,8 +39,8 @@ const lua = document.querySelector('.lua');
 // Calcular a duração da animação (tempo para a Lua completar uma órbita)
 const duracaoOrbita = (2 * Math.PI * distancia) / velocidade / 1000; // Convertendo para segundos
 
-// **Escalar a duração da animação para um tempo mais razoável**
-const duracaoEscalada = duracaoOrbita / 1000; // Reduzimos a duração para uma animação mais rápida
+// **Escalar a duração da animação para um tempo muito rápido**
+const duracaoEscalada = duracaoOrbita / 10000; // Reduzindo o tempo de órbita drasticamente para um movimento mais rápido
 
 // Ajustar a duração da animação da Lua com base na velocidade orbital
 lua.style.animationDuration = `${duracaoEscalada.toFixed(2)}s`; // Aplica o tempo calculado à animação
